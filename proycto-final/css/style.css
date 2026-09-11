@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+
+body {
+    background-color: #e8e2cf;
+    font-family: Georgia, serif;
+    margin: 0;
+    color: #263d2c;
+}
+header {
+    padding: 40px;
+}
+
+h1 {
+    font-family: "Estonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+    color: #234d32;
+}
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: #234d32;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8860b;
+}
+main {
+    width: 85%;
+    margin: auto;
+}
+h2 {
+    font-family: "Estonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #8b6508;
+    font-size: 3.5em;
+    text-align: center;
+}
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.inverso {
+    flex-direction: row;
+}
+.texto {
+    width: 60%;
+}
+.texto p {
+    color: #263d2c;
+    font-size: 1.5em;
+    line-height: 1.6;
+    text-align: justify;
+}
+.contenido img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.justificacion {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.justificacion p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.4em;
+    line-height: 1.6;
+    text-align: justify;
+}
+.enlaces {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.enlaces a {
+    display: block;
+    color: #234d32;
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+.enlaces a:hover {
+    color: #b8860b;
+}
+.imagen-abajo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.imagen-abajo img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #234d32;
+}
+
+footer p {
+    font-size: 18px;
+}
