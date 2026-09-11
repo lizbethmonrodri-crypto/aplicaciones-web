@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+
+body {
+    background-color: #949bd9;
+    font-family: Georgia, serif;
+    margin: 0;
+    color: black;
+}
+
+/* TÍTULO PRINCIPAL */
+
+header {
+    padding: 40px;
+}
+
+h1 {
+    font-family: "Estonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.texto {
+    width: 62%;
+}
+
+h2 {
+    font-family: "Estonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #3214d4;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.texto p {
+    color: #fff700;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contenido img {
+    width: 400px;
+    margin-left: 30px;
+}
+
+/* SIGNIFICADOS */
+
+.contenido2 {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.flores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.flores div {
+    width: 250px;
+}
+
+.flores h3 {
+    font-family: "Estonia", cursive;
+    font-size: 2.5em;
+    color: #3214d4;
+    margin-bottom: 5px;
+}
+
+.flores p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* JUSTIFICACIÓN */
+
+.justificacion {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.justificacion p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.4em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.justificacion a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #3214d4;
+    font-size: 1.2em;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 18px;
+}
