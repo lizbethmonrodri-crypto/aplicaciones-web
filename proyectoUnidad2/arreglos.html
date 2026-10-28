@@ -2,134 +2,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Arreglos florales</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arreglos florales de Ramo Resuelto">
-    <title>Arreglos más solicitados | Ramo Resuelto</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
-        <a class="logo" href="index.html">ramo resuelto<span style="color:var(--pink)">.</span></a>
-
-        <nav class="menu d-flex align-items-center" aria-label="Navegación principal">
-            <a href="index.html">Inicio</a>
-            <a href="significado.html">Significado</a>
-            <a class="activo" href="arreglos.html">Arreglos</a>
-            <a href="fechas.html">Fechas especiales</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
-        <button id="btn_modo" type="button">Modo oscuro</button>
+    <header>
+        <h1>Arreglos florales</h1>
+        <p>Un ramo para cada ocasión</p>
     </header>
 
-    <main>
-        <div class="contenedor">
-            <section class="seccion">
-                <p class="subtitulo">Los favoritos de nuestros clientes</p>
-                <h1>Flores y arreglos más solicitados</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="significado.html">Significado</a>
+        <a href="arreglos.html">Arreglos</a>
+        <a href="fechas.html">Fechas especiales</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 
-                <p class="intro">
-                    Estas son ideas de arreglos que puedes pedir como inspiración.
-                    El tamaño, los colores y la disponibilidad se pueden adaptar
-                    a cada ocasión.
-                </p>
+    <button id="btn_modo">Cambiar colores</button>
 
-                <div class="tarjetas">
+    <div class="contenedor">
+        <div class="tarjetas">
 
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1000&q=85"
-                            alt="Ramo de rosas rojas">
-                        <div class="informacion">
-                            <h3>Ramo Enamorados</h3>
-                            <p>Rosas rojas con follaje y envoltura sencilla. Un clásico para expresar amor.</p>
-                            <p class="etiqueta">Ideal para: aniversarios</p>
-                        </div>
-                    </article>
+            <div class="card">
+                <img src="./img/ramoromantico.webp"
+                alt="Ramo de rosas">
+                <h2>Ramo romántico</h2>
+                <p>Rosas para expresar amor en aniversarios y otras ocasiones.</p>
+            </div>
 
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=1000&q=85"
-                            alt="Arreglo de flores mixtas">
-                        <div class="informacion">
-                            <h3>Ramo Sorpresa</h3>
-                            <p>Mezcla de flores de temporada en tonos pastel, alegre y delicada.</p>
-                            <p class="etiqueta">Ideal para: cumpleaños</p>
-                        </div>
-                    </article>
+            <div class="card">
+                <img src="./img/ramosorpresa_1.webp"
+                alt="Ramo de flores variadas">
+                <h2>Ramo sorpresa</h2>
+                <p>Flores de diferentes colores para cumpleaños y regalos.</p>
+            </div>
 
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1470509037663-253a89d0ad1b?auto=format&fit=crop&w=1000&q=85"
-                            alt="Arreglo con girasoles">
-                        <div class="informacion">
-                            <h3>Rayito de Sol</h3>
-                            <p>Girasoles y verdes decorativos para compartir energía y buenos deseos.</p>
-                            <p class="etiqueta">Ideal para: felicitaciones</p>
-                        </div>
-                    </article>
+            <div class="card">
+                <img src="./img/ramoalegre.webp"
+                alt="Girasoles">
+                <h2>Ramo alegre</h2>
+                <p>Girasoles para transmitir felicidad y buenos deseos.</p>
+            </div>
 
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1520763185298-1b434c9197f?auto=format&fit=crop&w=1000&q=85"
-                            alt="Tulipanes de colores">
-                        <div class="informacion">
-                            <h3>Tulipanes Bonitos</h3>
-                            <p>Un ramo sencillo y moderno, perfecto para un detalle espontáneo.</p>
-                            <p class="etiqueta">Ideal para: cualquier día</p>
-                        </div>
-                    </article>
+            <div class="card">
+                <img src="./img/ramotulipanes.webp"
+                alt="Tulipanes">
+                <h2>Ramo de tulipanes</h2>
+                <p>Una opción sencilla para sorprender a una persona especial.</p>
+            </div>
 
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1000&q=85"
-                            alt="Lirios elegantes">
-                        <div class="informacion">
-                            <h3>Elegancia Blanca</h3>
-                            <p>Lirios y flores claras con una presentación sobria y elegante.</p>
-                            <p class="etiqueta">Ideal para: agradecimientos</p>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <img class="img-flor"
-                            src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=1000&q=85"
-                            alt="Arreglo floral en caja">
-                        <div class="informacion">
-                            <h3>Caja Floral</h3>
-                            <p>Flores acomodadas en una caja decorativa, práctica para regalar y colocar.</p>
-                            <p class="etiqueta">Ideal para: ocasiones especiales</p>
-                        </div>
-                    </article>
-
-                </div>
-
-                <div class="franja">
-                    <h2>¿Tienes una idea diferente?</h2>
-                    <p>
-                        Podemos orientarte para elegir colores, flores y presentación
-                        según la ocasión y tu presupuesto.
-                    </p>
-                    <a class="btn-principal" href="contacto.html">Solicitar información</a>
-                </div>
-            </section>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="contenedor">
-            <strong>ramo resuelto.</strong>
-            <p>Flores para decir lo que a veces cuesta poner en palabras.</p>
-            <p class="nota" style="color:#f5e9e1">
-                Sitio de muestra escolar · Las imágenes se cargan desde internet.
-            </p>
-        </div>
+        <h2>¿Buscas un arreglo especial?</h2>
+        <p>Puedes visitar nuestra sección de contacto para consultar información.</p>
+        <a class="boton" href="contacto.html">Ir a contacto</a>
+    </div>
+
+    <footer>
+        <p>Ramo Resuelto | Proyecto escolar</p>
     </footer>
 
-    <script src="../javaScript/function.js"></script>
+    <script src="../js/function.js"></script>
 </body>
 </html>
