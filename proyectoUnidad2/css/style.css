@@ -2,7 +2,7 @@
     --bg-color: #f8f1e9;
     --text-color: #302b2a;
     --accent-color: #b86f80;
-    --verde: #496b52;
+    --rosa: #e37cce;
     --card: #fffaf5;
     --border: #e5cfc7;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: var(--verde);
+    background-color: var(--rosa);
     color: white;
     text-align: center;
     padding: 20px;
@@ -32,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: var(--verde);
+    color: var(--rosa);
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,7 +43,7 @@ nav a:hover {
 
 #btn_modo {
     background-color: var(--accent-color);
-    color: white;
+    color: rgb(238, 131, 192);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 h2 {
-    color: var(--verde);
+    color: var(--rosa);
 }
 
 .portada {
@@ -104,7 +104,7 @@ h2 {
 }
 
 .boton {
-    background-color: var(--verde);
+    background-color: var(--rosa);
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -135,7 +135,7 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: var(--verde);
+    background-color: var(--rosa);
     color: white;
     text-align: center;
     padding: 15px;
@@ -147,8 +147,8 @@ body.modo_oscuro {
     --bg-color: #252b27;
     --text-color: #f5f0eb;
     --accent-color: #d98d9d;
-    --verde: #334c3b;
-    --card: #343b36;
+    --rosa: #f480d3;
+    --card: #87ab91;
     --border: #626b63;
 }
 
