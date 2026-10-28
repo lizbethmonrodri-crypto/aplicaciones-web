@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+        <p>Cuéntanos qué tipo de flores buscas</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="significado.html">Significado</a>
+        <a href="arreglos.html">Arreglos</a>
+        <a href="fechas.html">Fechas especiales</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <button id="btn_modo">Cambiar colores</button>
+
+    <div class="contenedor">
+        <h2>Formulario de contacto</h2>
+
+        <form id="formulario">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+            placeholder="Ingresa tu nombre">
+
+            <br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"
+            placeholder="Ingresa tu correo">
+
+            <br>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular"
+            placeholder="Ingresa tu número de celular">
+
+            <br>
+
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="">Selecciona una opción</option>
+                <option>Consultar un arreglo</option>
+                <option>Hacer un pedido</option>
+                <option>Solicitar información</option>
+            </select>
+
+            <br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"
+            placeholder="Escribe tu mensaje"></textarea>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <p id="respuesta"></p>
+
+        <h2>Aclaraciones</h2>
+        <p>Las flores pueden cambiar según la temporada y la disponibilidad.</p>
+        <p>Las fotografías son ejemplos y los arreglos pueden tener diferencias.</p>
+        <p>Este formulario es una demostración escolar y no envía mensajes reales.</p>
+
+        <h2>Datos de contacto de ejemplo</h2>
+        <p>Correo: contacto@ramoresuelto.com</p>
+        <p>Horario: lunes a sábado, de 9:00 a 18:00.</p>
+    </div>
+
+    <footer>
+        <p>Ramo Resuelto | Proyecto escolar</p>
+    </footer>
+
+    <script src="../javaScript/function.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+:root{/*son mis variables de inicio*/
+--bg-color: #f4f6f9 ;
+--card-bg: #ffffff;
+--text-color:#1e293b;
+--accent-color:#2563eb;
+--border-color:#cbd5e1;
+}
+/*DEclaro variables ciuando pongas el modo oscuro*/
+body.modo_oscuro{
+--bg-color: #0f172a;
+--card-bg: #1e293b;
+--text-color: #f8fafc;
+--accent-color: #38bdf8;
+--border-color: #334155;
+}
+
+body{
+    background-color: var(--bg-color) ;
+    color: var(--text-color);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    /*Transcripcion suave al cambiar de color */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+#btn_cambio{
+    background-color: var(--accent-color);
+    color: #e9eaed;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: blod;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2 ease, background-color 0.3 ease;
+
+}
+#btn_cambio:hover{
+transform: scale(1.05);
+}
+
+/*esto es codigo bueno*/
+.padre{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.hijo{
+    height: 10rem;
+    width: 16%;
+    border-radius: 15px;
+}
+:root{
+--amarillo: #e2ee3f ;
+--verde: #2ddf2a;
+--cafe:#3a2f1f;
+--rosa:#d83fa0;
+--rojo:#dc1a1a;
+--azul:#164dcd;
+--naranja: #e67e22;
+}
+/*DEclaro variables ciuando pongas el modo oscuro*/
+.padre.modo_transparente{
+--amarillo: #e2ee3f2c;
+--verde: #2ddf2a2c;
+--cafe:#3a2f1f2c;
+--rosa:#d83fa02c;
+--rojo:#dc1a1a2c;
+--azul:#164dcd2c;
+--naranja: #e67e222c;
+}
+
+#btn_cambio2{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #000;
+    transition: background-color 0.5s ease-in-out;
+}
+#btn_cambio2:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.amarillo{
+    background-color: var(--amarillo);
+}
+.verde{
+    background-color: var(--verde);
+}
+.cafe{
+    background-color: var(--cafe);
+}
+.rosa{
+    background-color: var(--rosa);
+}
+.rojo{
+    background-color: var(--rojo);
+}
+.azul{
+    background-color: var(--azul);
+}
+.naranja{
+    background-color: var(--naranja);
+}
+

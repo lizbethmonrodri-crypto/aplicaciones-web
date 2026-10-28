@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #ead5a3;
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #507744;
+    color: rgb(241, 166, 166);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+#div_DLMR {
+    --fondo: #b96868;
+    --texto: #303b30;
+    --titulo: #507744;
+    --borde: #c7f1aa;
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+
+    background: var(--fondo);
+    color: var(--texto);
+
+    transition: background 0.3s, color 0.3s;
+}
+
+#div_DLMR h1,
+#div_DLMR h2,
+#div_DLMR h3 {
+    color: var(--titulo);
+}
+
+#div_DLMR h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+#div_DLMR p {
+    line-height: 1.6;
+}
+
+.receta,
+.condiciones {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.ingrediente {
+    padding: 8px;
+    border-bottom: 1px solid var(--borde);
+    cursor: pointer;
+}
+
+.ingrediente p {
+    font-weight: bold;
+}
+
+.ingrediente img {
+    display: none;
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    margin: 10px auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ingrediente:hover img,
+.ingrediente.mostrar img {
+    display: block;
+}
+
+.referencia img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* MODO OSCURO */
+#div_DLMR.modo_oscuro {
+    --fondo: #202a23;
+    --texto: #f1f5ee;
+    --titulo: #b5db9c;
+    --borde: #48584b;
+}
+
+/* MODO TRANSPARENTE */
+#div_DLMR.modo_transparente {
+    --fondo: rgba(255, 255, 255, 0.35);
+    --texto: #303b30;
+    --titulo: #365433;
+    --borde: rgba(80, 119, 68, 0.35);
+
+    backdrop-filter: blur(5px);
+}
+
+/* SI SE ACTIVAN LOS DOS BOTONES */
+#div_DLMR.modo_oscuro.modo_transparente {
+    --fondo: rgba(32, 42, 35, 0.55);
+    --texto: #f1f5ee;
+    --titulo: #b5db9c;
+    --borde: rgba(181, 219, 156, 0.35);
+}
+@media screen and (max-width: 750px) {
+    body {
+        padding: 10px;
+    }
+
+    #div_DLMR {
+        padding: 15px;
+    }
+
+    .columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .referencia img {
+        transform: scale(0.8);
+    }
+
+    .ingrediente img {
+        transform: scale(0.8);
+    }
+
+    #div_DLMR h1 {
+        font-size: 30px;
+    }
+}

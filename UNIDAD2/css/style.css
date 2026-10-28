@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header img{
+    height: 10rem;
+}
+.padre{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hijo{
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border: 2px solid  #2c830a;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding: 3rem;
+    border-style: solid;
+    border-width: 5px;
+
+}
+.hijo img{
+    width: 95%;
+    border: 5px dotted #cf11a5;
+}
+.hijo h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+} 
+.hijo p{
+   text-align: justify;
+   font-size: 1.2rem;
+   line-height: 3.5rem;
+   color: #2c830a;
+}
+.hijo a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #cf11a5;
+}
+.hijo a:hover{
+    color: #2c830a;
+    text-decoration: underline;
+}
+.hijo h2:first-child{
+    color: #cf11a5;
+    font-size: 6rem;
+}
+.hijo h2:nth-child(2){
+    color: #eef94f;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+.hijo:hover{
+    transition: 1.5s;
+    border-color: #0ccafa;
+}
+header a{
+    text-decoration: none;
+    color: #cf11a5;
+    font-size: 1.5rem;
+}
+header a:hover{
+    cursor:pointer;
+    color: #2c830a;
+    text-decoration: underline;
+}
