@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Arreglos florales</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Resuelto | Arreglos florales</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Arreglos florales</h1>
-        <p>Un ramo para cada ocasión</p>
+    <header class="encabezado">
+        <p class="marca">RAMO RESUELTO</p>
+        <h1>Un ramo para cada historia</h1>
+        <p>Encuentra una idea que combine con lo que quieres expresar.</p>
     </header>
 
     <nav>
@@ -22,50 +22,137 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <button id="btn_modo">Cambiar colores</button>
-
-    <div class="contenedor">
-        <div class="tarjetas">
-
-            <div class="card">
-                <img src="./img/ramoromantico.webp"
-                alt="Ramo de rosas">
-                <h2>Ramo romántico</h2>
-                <p>Rosas para expresar amor en aniversarios y otras ocasiones.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/ramosorpresa_1.webp"
-                alt="Ramo de flores variadas">
-                <h2>Ramo sorpresa</h2>
-                <p>Flores de diferentes colores para cumpleaños y regalos.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/ramoalegre.webp"
-                alt="Girasoles">
-                <h2>Ramo alegre</h2>
-                <p>Girasoles para transmitir felicidad y buenos deseos.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/ramotulipanes.webp"
-                alt="Tulipanes">
-                <h2>Ramo de tulipanes</h2>
-                <p>Una opción sencilla para sorprender a una persona especial.</p>
-            </div>
-
-        </div>
-
-        <h2>¿Buscas un arreglo especial?</h2>
-        <p>Puedes visitar nuestra sección de contacto para consultar información.</p>
-        <a class="boton" href="contacto.html">Ir a contacto</a>
+    <div class="barra-modo">
+        <button id="btn_modo" type="button">Modo oscuro</button>
     </div>
 
-    <footer>
-        <p>Ramo Resuelto | Proyecto escolar</p>
-    </footer>
+    <main class="contenedor">
 
-    <script src="../js/function.js"></script>
+        <section class="introduccion">
+            <p class="etiqueta">IDEAS PARA REGALAR</p>
+            <h2>Arreglos con diferentes estilos</h2>
+            <p>
+                Cada arreglo puede tener un estilo distinto algunos
+                transmiten romanticismo otros alegría y algunos son
+                perfectos para agradecer o celebrar un logro
+                estas propuestas son ideas de diseño que puedes adaptar
+                a los gustos de la persona que recibirá las flores.
+            </p>
+        </section>
+
+        <section class="tarjetas">
+
+            <article class="card">
+                <img src="img/ramoromantico.webp" alt="Ramo romántico de flores">
+                <div class="card-contenido">
+                    <h2>Ramo romántico</h2>
+                    <p>
+                        Una composición inspirada en el amor y la cercanía.
+                        Las rosas rojas son una opción tradicional, y se
+                        pueden combinar con follaje y un envoltorio sencillo.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/ramosorpresa_1.webp" alt="Ramo de flores variadas">
+                <div class="card-contenido">
+                    <h2>Ramo sorpresa</h2>
+                    <p>
+                        Combina flores de diferentes colores para crear
+                        un regalo alegre. Puedes elegir tonos pastel
+                        para un estilo delicado o colores vivos para
+                        una presentación más llamativa.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/ramoalegre.webp" alt="Arreglo floral alegre">
+                <div class="card-contenido">
+                    <h2>Ramo de girasoles</h2>
+                    <p>
+                        Los tonos amarillos aportan luminosidad y una
+                        sensación de alegría. Es una propuesta para
+                        acompañar buenos deseos o celebrar un logro.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/ramotulipanes.webp" alt="Ramo de tulipanes">
+                <div class="card-contenido">
+                    <h2>Ramo de tulipanes</h2>
+                    <p>
+                        Los tulipanes permiten crear arreglos elegantes
+                        y sencillos. Puedes elegir un solo color para
+                        una apariencia uniforme o mezclar varios tonos.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <h2>Ramo de margaritas</h2>
+                    <p>
+                        Una propuesta sencilla y fresca. Las margaritas
+                        pueden combinarse con flores blancas y follaje
+                        para crear un arreglo ligero y natural.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <h2>Arreglo de orquídeas</h2>
+                    <p>
+                        Las orquídeas pueden ser el centro de un arreglo
+                        de estilo elegante. Una presentación sencilla
+                        permite destacar su forma y sus colores.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <h2>Ramo de gerberas</h2>
+                    <p>
+                        Las gerberas de varios colores permiten crear
+                        un arreglo llamativo y lleno de energía.
+                        Puedes combinar tonos parecidos o elegir una
+                        mezcla de colores para darle personalidad.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <h2>Arreglo para agradecer</h2>
+                    <p>
+                        Una combinación de flores suaves y colores
+                        armoniosos puede transmitir reconocimiento
+                        y cariño. Lo importante es acompañar el arreglo
+                        con un mensaje personal.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="consejo">
+            <h2>¿Cómo elegir el arreglo adecuado?</h2>
+            <p>
+                <Considera>
+                Piensa en la ocasión y en el mensaje que quieres 
+                transmitir, considera los colores y las flores que le gustan a esa persona
+                elige un tamaño y una presentación adecuados para el momento y 
+                pregunta por la disponibilidad porque las flores cambian según la temporada.</p>
+            </p>
+
+            <a class="boton" href="contacto.html">Consultar un arreglo</a>
+        </section>
+
+    </main>
+    <script src="JavaScrip/funtion.js"></script>
 </body>
 </html>

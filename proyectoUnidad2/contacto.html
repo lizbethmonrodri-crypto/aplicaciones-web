@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Contacto</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Resuelto | Contacto</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Contacto</h1>
-        <p>Cuéntanos qué tipo de flores buscas</p>
+    <header class="encabezado">
+        <p class="marca">RAMO RESUELTO</p>
+        <h1>Cuéntanos tu idea</h1>
+        <p>Un buen arreglo comienza con saber qué quieres expresar.</p>
     </header>
 
     <nav>
@@ -22,66 +22,91 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <button id="btn_modo">Cambiar colores</button>
-
-    <div class="contenedor">
-        <h2>Formulario de contacto</h2>
-
-        <form id="formulario">
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"
-            placeholder="Ingresa tu nombre">
-
-            <br>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email"
-            placeholder="Ingresa tu correo">
-
-            <br>
-
-            <label for="celular">Celular:</label>
-            <input type="tel" id="celular" name="celular"
-            placeholder="Ingresa tu número de celular">
-
-            <br>
-
-            <label for="motivo">Motivo de contacto:</label>
-            <select id="motivo" name="motivo">
-                <option value="">Selecciona una opción</option>
-                <option>Consultar un arreglo</option>
-                <option>Hacer un pedido</option>
-                <option>Solicitar información</option>
-            </select>
-
-            <br>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4"
-            placeholder="Escribe tu mensaje"></textarea>
-
-            <br>
-
-            <input type="submit" value="Enviar">
-        </form>
-
-        <p id="respuesta"></p>
-
-        <h2>Aclaraciones</h2>
-        <p>Las flores pueden cambiar según la temporada y la disponibilidad.</p>
-        <p>Las fotografías son ejemplos y los arreglos pueden tener diferencias.</p>
-        <p>Este formulario es una demostración escolar y no envía mensajes reales.</p>
-
-        <h2>Datos de contacto de ejemplo</h2>
-        <p>Correo: contacto@ramoresuelto.com</p>
-        <p>Horario: lunes a sábado, de 9:00 a 18:00.</p>
+    <div class="barra-modo">
+        <button id="btn_modo" type="button">Modo oscuro</button>
     </div>
 
-    <footer>
-        <p>Ramo Resuelto | Proyecto escolar</p>
-    </footer>
+    <main class="contenedor">
 
-    <script src="../js/function.js"></script>
+        <section class="introduccion">
+            <h2>Formulario de contacto</h2>
+            <p>
+                Completa los siguientes datos para describir el arreglo
+                que te gustaría conocer o solicitar. Los campos marcados
+                como obligatorios deben llenarse para validar el formulario.
+            </p>
+        </section>
+
+        <form id="formulario" >
+
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre"placeholder="Escribe tu nombre">
+
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email"placeholder="ejemplo@correo.com">
+
+            <label for="celular">Celular *</label>
+            <input type="tel" id="celular" name="celular"placeholder="Escribe 10 dígitos"maxlength="10">
+
+            <label for="motivo">Motivo de contacto *</label>
+            <select id="motivo" name="motivo">
+                <option value="">Selecciona una opción</option>
+                <option value="Consultar un arreglo">Consultar un arreglo</option>
+                <option value="Hacer un pedido">Hacer un pedido</option>
+                <option value="Solicitar información">Solicitar información</option>
+                <option value="Otro">Otro motivo</option>
+            </select>
+
+            <label for="ocasion">¿Para qué ocasión buscas flores?</label>
+            <select id="ocasion" name="ocasion">
+                <option value="">Selecciona una ocasión (opcional)</option>
+                <option value="Cumpleaños">Cumpleaños</option>
+                <option value="Aniversario">Aniversario</option>
+                <option value="Amor y amistad">Amor y amistad</option>
+                <option value="Día de las Madres">Día de las Madres</option>
+                <option value="Graduación">Graduación</option>
+                <option value="Agradecimiento">Agradecimiento</option>
+                <option value="Otra ocasión">Otra ocasión</option>
+            </select>
+
+            <label for="presupuesto">Presupuesto aproximado (opcional)</label>
+            <select id="presupuesto" name="presupuesto">
+                <option value="">Prefiero no indicarlo</option>
+                <option value="Menos de $300">Menos de $300</option>
+                <option value="$300 a $600">$300 a $600</option>
+                <option value="$600 a $1000">$600 a $1000</option>
+                <option value="Más de $1000">Más de $1000</option>
+            </select>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5"
+                      placeholder="Describe los colores, las flores o el estilo que te gustaría"></textarea>
+
+            <label class="aceptacion" for="acepto">
+                <input type="checkbox" id="acepto" name="acepto">
+                Confirmo que revisé los datos que escribí.
+            </label>
+
+            <p class="nota-formulario">* Campos obligatorios.</p>
+
+            <button class="boton boton-enviar" type="submit">Validar formulario</button>
+
+            <p id="respuesta" role="status" aria-live="polite"></p>
+        </form>
+
+        <section class="consejo">
+            <h2>Antes de consultar</h2>
+            <p>
+                Las flores pueden variar según la temporada y la
+                disponibilidad. Las imágenes de este sitio son ejemplos
+                visuales y un arreglo real puede tener algunas diferencias.
+            </p>
+            <p>
+                Este formulario es una demostración escolar: valida los
+                datos en tu navegador, pero no envía pedidos ni mensajes.
+            </p>
+    </main>
+
+    <script src="JavaScrip/funtion.js"></script>
 </body>
 </html>

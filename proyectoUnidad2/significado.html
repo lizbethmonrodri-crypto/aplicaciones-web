@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Significado de las flores</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Resuelto | Significado de las flores</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Significado de las flores</h1>
-        <p>Descubre lo que puedes expresar con cada flor</p>
+    <header class="encabezado">
+        <p class="marca">RAMO RESUELTO</p>
+        <h1>El lenguaje de las flores</h1>
+        <p>Cada flor puede transmitir una emoción diferente.</p>
     </header>
 
     <nav>
@@ -21,46 +23,151 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <button id="btn_modo">Cambiar colores</button>
-
-    <div class="contenedor">
-        <div class="tarjetas">
-
-            <div class="card">
-                <img src="./img/rosasrojas.webp"
-                alt="Rosas">
-                <h2>Rosas</h2>
-                <p>Representan amor, cariño y admiración.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/tulipanes.webp"
-                alt="Tulipanes">
-                <h2>Tulipanes</h2>
-                <p>Se relacionan con el amor sincero y los nuevos comienzos.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/go.webp"
-                alt="Girasoles">
-                <h2>Girasoles</h2>
-                <p>Representan alegría, energía y amistad.</p>
-            </div>
-
-            <div class="card">
-                <img src="./img/lirios.webp"
-                alt="Lirios">
-                <h2>Lirios</h2>
-                <p>Se relacionan con la elegancia y el respeto.</p>
-            </div>
-
-        </div>
+    <div class="barra-modo">
+        <button id="btn_modo" type="button">Modo oscuro</button>
     </div>
 
-    <footer>
-        <p>Ramo Resuelto | Proyecto escolar</p>
-    </footer>
+    <main class="contenedor">
 
-    <script src="../js/function.js"></script>
+        <section class="introduccion">
+            <p class="etiqueta">ELIGE SEGÚN LO QUE QUIERAS EXPRESAR</p>
+            <h2>¿Qué mensaje quieres transmitir?</h2>
+            <p>
+                Las flores tienen significados tradicionales relacionados
+                con sus colores, su apariencia y las ocasiones en las que
+                suelen regalarse. Estos significados pueden cambiar según
+                la persona y la cultura, así que también importa lo que
+                cada flor represente para quien la recibe.
+            </p>
+        </section>
+
+        <section class="tarjetas">
+
+            <article class="card">
+                <img src="img/rosasrojas.webp" alt="Rosas rojas">
+                <div class="card-contenido">
+                    <span class="categoria">Amor y admiración</span>
+                    <h2>Rosas</h2>
+                    <p>
+                        Las rosas son conocidas por representar el amor,
+                        el cariño y la admiración. Las rojas suelen
+                        asociarse con el amor romántico, mientras que
+                        otros colores pueden utilizarse para expresar
+                        amistad, gratitud o buenos deseos.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/tulipanes.webp" alt="Tulipanes de colores">
+                <div class="card-contenido">
+                    <span class="categoria">Cariño y nuevos comienzos</span>
+                    <h2>Tulipanes</h2>
+                    <p>
+                        Los tulipanes se relacionan con el amor sincero,
+                        la elegancia y los nuevos comienzos. Sus diferentes
+                        colores permiten crear regalos delicados y
+                        alegres sin que el arreglo se vea demasiado cargado.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/go.webp" alt="Girasoles amarillos">
+                <div class="card-contenido">
+                    <span class="categoria">Alegría y energía</span>
+                    <h2>Girasoles</h2>
+                    <p>
+                        Por su color y su apariencia, los girasoles suelen
+                        relacionarse con la felicidad, la energía positiva,
+                        la lealtad y la amistad. Son una opción para regalar
+                        ánimo y compartir buenos deseos.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/lirios.webp" alt="Lirios claros">
+                <div class="card-contenido">
+                    <span class="categoria">Respeto y elegancia</span>
+                    <h2>Lirios</h2>
+                    <p>
+                        Los lirios destacan por su forma y elegancia.
+                        Tradicionalmente se relacionan con la pureza,
+                        el respeto y la renovación. Dependiendo del color
+                        y de la ocasión, pueden formar parte de regalos
+                        delicados o arreglos solemnes.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <span class="categoria">Amistad y sencillez</span>
+                    <h2>Margaritas</h2>
+                    <p>
+                        Las margaritas suelen asociarse con la alegría,
+                        la inocencia, la sinceridad y la amistad.
+                        Su aspecto sencillo las convierte en una opción
+                        agradable para demostrar cariño sin una ocasión
+                        demasiado formal.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <span class="categoria">Belleza y admiración</span>
+                    <h2>Orquídeas</h2>
+                    <p>
+                        Las orquídeas suelen representar elegancia,
+                        belleza y admiración. Por su apariencia especial,
+                        pueden ser un regalo para alguien a quien queremos
+                        reconocer o sorprender con un detalle diferente.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <span class="categoria">Afecto y gratitud</span>
+                    <h2>Claveles</h2>
+                    <p>
+                        Los claveles se utilizan para expresar afecto,
+                        admiración y agradecimiento. Sus colores permiten
+                        combinarlos en arreglos variados y adaptarlos
+                        a diferentes celebraciones.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card card-sin-imagen">
+                <div class="card-contenido">
+                    <span class="categoria">Entusiasmo y alegría</span>
+                    <h2>Gerberas</h2>
+                    <p>
+                        Las gerberas destacan por sus colores vivos y
+                        suelen relacionarse con la alegría, el optimismo
+                        y la energía. Son útiles cuando queremos que
+                        el regalo transmita un mensaje alegre y cercano.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="consejo">
+            <h2>Un consejo antes de elegir</h2>
+            <p>
+                Puedes tomar los significados como una guía, pero no
+                necesitas seguir reglas estrictas. Si una flor le gusta
+                especialmente a la persona que recibirá el ramo, esa
+                también es una buena razón para elegirla.
+            </p>
+            <a class="boton" href="arreglos.html">Buscar ideas de arreglos</a>
+        </section>
+
+    </main>
+    <script src="JavaScrip/funtion.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Ramo Resuelto - Inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Resuelto | Inicio</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Ramo Resuelto</h1>
-        <p>Flores para expresar tus sentimientos</p>
+    <header class="encabezado">
+        <p class="marca">RAMO RESUELTO</p>
+        <h1>Hay flores para decir lo que sentimos</h1>
+        <p>Detalles que convierten un momento en un recuerdo especial.</p>
     </header>
 
     <nav>
@@ -22,43 +22,95 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <button id="btn_modo">Cambiar colores</button>
-
-    <div class="contenedor">
-        <h2>Nuestra historia</h2>
-
-        <img class="portada"
-        src="./img/imagen principal.webp"
-        alt="Ramo de flores">
-
-        <p>
-            Ramo Resuelto nació con la idea de ayudar a las personas
-            a expresar sus sentimientos por medio de las flores.
-            Creemos que un ramo puede demostrar amor, amistad,
-            agradecimiento o simplemente alegrar el día de alguien.
-        </p>
-
-        <p>
-            Nos gusta combinar diferentes flores y colores para crear
-            arreglos especiales para cada ocasión. Queremos que cada
-            persona encuentre un detalle que represente lo que siente.
-        </p>
-
-        <h2>¿Por qué elegir flores?</h2>
-
-        <p>
-            Las flores son un regalo especial porque sus colores y
-            significados permiten transmitir mensajes sin necesidad
-            de decir muchas palabras.
-        </p>
-
-        <a class="boton" href="arreglos.html">Ver arreglos</a>
+    <div class="barra-modo">
+        <button id="btn_modo" type="button">Modo oscuro</button>
     </div>
 
-    <footer>
-        <p>Ramo Resuelto | Proyecto escolar</p>
-    </footer>
+    <main class="contenedor">
 
-    <script src="../js/function.js"></script>
+        <section class="presentacion">
+            <div class="presentacion-texto">
+                <p class="etiqueta">UN DETALLE, MUCHAS EMOCIONES</p>
+                <h2>Las flores también hablan por nosotros</h2>
+
+                <p>
+                    En Ramo Resuelto creemos que regalar flores es una forma
+                    bonita de expresar aquello que a veces nos cuesta decir un ramo puede representar amor, amistad, gratitud,admiración o simplemente las ganas de alegrarle el día
+                    a alguien.
+                </p>
+
+                <p>
+                    Por eso, queremos ayudarte a conocer el significado de
+                    cada flor, descubrir diferentes estilos de arreglos y
+                    elegir un detalle que tenga un sentido especial.
+                </p>
+
+                <a class="boton" href="arreglos.html">Descubrir los arreglos</a>
+            </div>
+
+            <img class="portada"
+                 src="img/imagen principal.webp"
+                 alt="Arreglo floral de Ramo Resuelto">
+        </section>
+
+        <section class="seccion">
+            <p class="etiqueta">DESCUBRE</p>
+            <h2>¿Qué puedes encontrar aquí?</h2>
+
+            <div class="tarjetas">
+                <article class="card">
+                    <div class="icono-flor">🌷</div>
+                    <h3>Significado de las flores</h3>
+                    <p>
+                        Conoce lo que pueden representar las rosas,
+                        los tulipanes, las margaritas y otras flores.
+                    </p>
+                    <a class="enlace" href="significado.html">Conocer significados</a>
+                </article>
+
+                <article class="card">
+                    <div class="icono-flor">💐</div>
+                    <h3>Arreglos florales</h3>
+                    <p>
+                        Encuentra ideas para cumpleaños, aniversarios,
+                        agradecimientos y sorpresas.
+                    </p>
+                    <a class="enlace" href="arreglos.html">Ver arreglos</a>
+                </article>
+
+                <article class="card">
+                    <div class="icono-flor">🎁</div>
+                    <h3>Fechas especiales</h3>
+                    <p>
+                        Inspírate para elegir flores en celebraciones
+                        importantes y momentos que merecen recordarse.
+                    </p>
+                    <a class="enlace" href="fechas.html">Ver ocasiones</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="frase">
+            <p>“Un pequeño detalle también puede guardar un gran sentimiento”.</p>
+            <span>Ramo Resuelto</span>
+        </section>
+
+        <section class="seccion">
+            <h2>Un regalo con intención</h2>
+            <p>
+                No siempre es necesario esperar una fecha especial para
+                regalar flores. A veces, un ramo inesperado puede ser una
+                forma de agradecer, pedir disculpas, acompañar a alguien
+                o recordarle cuánto significa para nosotros.
+            </p>
+            <p>
+                Lo importante no es solamente la flor que elegimos, sino
+                la intención con la que la regalamos.
+            </p>
+            <a class="boton" href="contacto.html">Consultar información</a>
+        </section>
+
+    </main>
+    <script src="JavaScrip/funtion.js"></script>
 </body>
 </html>

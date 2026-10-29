@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Fechas especiales</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo Resuelto | Fechas especiales</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Fechas especiales</h1>
-        <p>Flores para celebrar momentos importantes</p>
+    <header class="encabezado">
+        <p class="marca">RAMO RESUELTO</p>
+        <h1>Flores para los momentos importantes</h1>
+        <p>Una celebración se recuerda más cuando tiene un detalle especial.</p>
     </header>
 
     <nav>
@@ -22,56 +22,132 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <button id="btn_modo">Cambiar colores</button>
-
-    <div class="contenedor">
-
-        <img class="portada"
-        src="./img/fechas.webp"
-        alt="Flores para regalar">
-
-        <div class="evento">
-            <h2>14 de febrero - Amor y Amistad</h2>
-            <p>Es una fecha popular para demostrar cariño a parejas y amistades.</p>
-            <p><strong>Flores recomendadas:</strong> rosas rojas o ramos variados.</p>
-        </div>
-
-        <div class="evento">
-            <h2>8 de marzo - Día Internacional de la Mujer</h2>
-            <p>Es una fecha para reconocer los derechos y logros de las mujeres.</p>
-            <p><strong>Flores recomendadas:</strong> tulipanes o flores de temporada.</p>
-        </div>
-
-        <div class="evento">
-            <h2>10 de mayo - Día de las Madres en México</h2>
-            <p>Muchas personas regalan flores para agradecer y demostrar cariño a sus mamás.</p>
-            <p><strong>Flores recomendadas:</strong> rosas, lirios o flores mixtas.</p>
-        </div>
-
-        <div class="evento">
-            <h2>Cumpleaños y aniversarios</h2>
-            <p>Son ocasiones para celebrar a las personas importantes.</p>
-            <p><strong>Flores recomendadas:</strong> tulipanes o ramos personalizados.</p>
-        </div>
-
-        <div class="evento">
-            <h2>1 y 2 de noviembre - Día de Muertos en México</h2>
-            <p>Las flores forman parte de las ofrendas y los recuerdos de los seres queridos.</p>
-            <p><strong>Flores recomendadas:</strong> cempasúchil.</p>
-        </div>
-
-        <div class="evento">
-            <h2>Navidad y Año Nuevo</h2>
-            <p>Son fechas para compartir buenos deseos con familiares y amistades.</p>
-            <p><strong>Flores recomendadas:</strong> arreglos rojos, blancos y verdes.</p>
-        </div>
-
+    <div class="barra-modo">
+        <button id="btn_modo" type="button">Modo oscuro</button>
     </div>
 
-    <footer>
-        <p>Ramo Resuelto | Proyecto escolar</p>
-    </footer>
+    <main class="contenedor">
 
-    <script src="../js/function.js"></script>
+        <section class="introduccion">
+            <img class="portada"
+                 src="./img/ramofechas.webp"
+                 alt="Arreglo floral para una celebración">
+
+            <p class="etiqueta">UN DETALLE PARA CADA OCASIÓN</p>
+            <h2>¿Qué flores puedes regalar?</h2>
+            <p>
+                A lo largo del año existen celebraciones que nos permiten
+                demostrar cariño, reconocer a otras personas y recordar
+                momentos importantes. Elegir flores para estas ocasiones
+                es una manera de acompañar la celebración con un detalle
+                personal.
+            </p>
+        </section>
+
+        <section class="lista-eventos">
+
+            <article class="evento">
+                <p class="fecha">14 DE FEBRERO</p>
+                <h2>Día del Amor y la Amistad</h2>
+                <p>
+                    Es una fecha popular para expresar cariño a la pareja,
+                    amistades y personas importantes. No todos los regalos
+                    tienen que ser románticos: también puedes preparar
+                    un ramo para una amistad.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">8 DE MARZO</p>
+                <h2>Día Internacional de la Mujer</h2>
+                <p>
+                    Esta fecha invita a reconocer los derechos, la historia
+                    y los logros de las mujeres. Si decides regalar flores,
+                    puedes acompañarlas con un mensaje de reconocimiento
+                    y respeto.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">10 DE MAYO · MÉXICO</p>
+                <h2>Día de las Madres</h2>
+                <p>
+                    Muchas familias aprovechan esta fecha para agradecer
+                    el cariño, el acompañamiento y el apoyo de sus mamás.
+                    Un ramo puede acompañarse con una carta o una nota
+                    personal.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">FECHA PERSONAL</p>
+                <h2>Cumpleaños</h2>
+                <p>
+                    Los cumpleaños son una oportunidad para celebrar
+                    a alguien y demostrar que recordamos su día.
+                    Puedes elegir flores de sus colores favoritos
+                    o un arreglo alegre y variado.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">FECHA PERSONAL</p>
+                <h2>Aniversarios</h2>
+                <p>
+                    Un aniversario permite recordar una relación,
+                    una amistad o una meta compartida. Elegir una flor
+                    que tenga un significado para ambas personas puede
+                    hacer que el detalle sea más personal.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">FIN DE CICLO ESCOLAR</p>
+                <h2>Graduaciones y logros</h2>
+                <p>
+                    Terminar una etapa representa esfuerzo y dedicación.
+                    Las flores pueden servir para felicitar a alguien
+                    por una graduación, un reconocimiento o una meta
+                    que le haya costado alcanzar.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">1 Y 2 DE NOVIEMBRE · MÉXICO</p>
+                <h2>Día de Muertos</h2>
+                <p>
+                    En muchas comunidades mexicanas, las flores forman
+                    parte de las ofrendas y de los espacios dedicados
+                    a recordar a los seres queridos. El cempasúchil
+                    destaca por su color y su presencia en esta tradición.
+                </p>
+            </article>
+
+            <article class="evento">
+                <p class="fecha">DICIEMBRE</p>
+                <h2>Navidad y Año Nuevo</h2>
+                <p>
+                    Son momentos en los que muchas personas se reúnen
+                    para compartir buenos deseos. Un arreglo puede
+                    decorar la casa o convertirse en un regalo para
+                    familiares y amistades.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="consejo">
+            <h2>No necesitas esperar una fecha especial</h2>
+            <p>
+                También puedes regalar flores para agradecer, animar
+                a alguien, pedir disculpas o simplemente demostrar
+                que te acordaste de esa persona. Los detalles inesperados
+                pueden tener un significado especial.
+            </p>
+            <a class="boton" href="contacto.html">Consultar un arreglo</a>
+        </section>
+
+    </main>
+    <script src="JavaScrip/funtion.js"></script>
 </body>
 </html>

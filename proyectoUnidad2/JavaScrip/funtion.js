@@ -1,15 +1,14 @@
-
-const btnModo = document.getElementById('btn_modo');
+const btnTheme = document.querySelector('#btn_cambio');
 const body = document.body;
-
-btnModo.addEventListener('click', () => {
+btnTheme.addEventListener('click',() =>{
     body.classList.toggle('modo_oscuro');
-
     if (body.classList.contains('modo_oscuro')) {
-        btnModo.textContent = 'Modo claro';
-    } else {
-        btnModo.textContent = 'Cambiar colores';
+        btnTheme.textContent = 'Modo claro';
+    }else{
+        btnTheme.textContent = 'Modo oscuro';
+        
     }
+    console.log('Modo oscuro activo:', body.classList.contains('Modo oscuro'));
 });
 
 const form = document.getElementById('formulario');
